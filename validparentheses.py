@@ -12,7 +12,7 @@ class Solution:
             else:
                 stack.append(char)
         
-        return not stack
+        return len(stack) == 0
 
 
 def main():
@@ -22,7 +22,8 @@ def main():
         ("()[]{}", True),
         ("(]", False),
         ("([)]", False),
-        ("{[]}", True)
+        ("{[]}", True),
+        ("]", False)
     ]
     
     sol = Solution()
